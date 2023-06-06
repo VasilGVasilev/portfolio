@@ -1,23 +1,25 @@
 'use client'
 
 import './globals.css'
+
+import { Roboto } from 'next/font/google';
+ 
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+});
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 import { imageLoader } from './imgLoader'
 
 export default function RootLayout({ children }) {
-  const [toggleClicked, setToggleClick] = useState(false);
 
-  const toggleNavbar = () => {
-    setToggleClick(state => !state);
-  }
-  const toTopHandle = () => {
-    window.scrollTo(0, 0);
-  }
 
   return (
-    <html>
+    <html className={`bg-white ${roboto.className}`}>
       <body>
         {children}
       </body>
