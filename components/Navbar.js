@@ -7,7 +7,10 @@ import useMediaQuery from "@/app/hooks/useMediaQuery";
 // - selected or to be selected animation
 // - change state in parent of Navbar component -> Home component
 
-// TODO: mobile menu comes as an animation with framer motion
+// TODO: 
+// mobile menu comes as an animation with framer motion
+// may be reverse link to anchor link if not smooth
+// refactor img to Image
 const LinkTemplate = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
@@ -35,7 +38,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
-          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
+          <div className="flex justify-between gap-16 font-opensans text-base font-semibold">
             <LinkTemplate
               page="Home"
               selectedPage={selectedPage}
@@ -67,7 +70,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             className="rounded-full bg-red p-2"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
-            <img alt="menu-icon" src="./assets/menu-icon.svg" />
+            <img alt="menu-icon" src="/assets/menu-icon.svg" />
           </button>
         )}
 
@@ -77,7 +80,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <img alt="close-icon" src="./assets/close-icon.svg" />
+                <img alt="close-icon" src="/assets/close-icon.svg" />
               </button>
             </div>
 
