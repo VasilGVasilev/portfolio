@@ -2,7 +2,7 @@
 
 import Navbar from "../components/Navbar";
 // import Landing from "./scenes/Landing";
-// import DotGroup from "./scenes/DotGroup";
+import DotGroup from "../components/DotGroup";
 // import MySkills from "./scenes/MySkills";
 // import LineGradient from "./components/LineGradient";
 // import Projects from "./scenes/Projects";
@@ -11,7 +11,7 @@ import Navbar from "../components/Navbar";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
 // import Testimonials from "./scenes/Testimonials";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Home() {
     const [selectedPage, setSelectedPage] = useState("home"); //where are we navigationwise
@@ -38,7 +38,7 @@ export default function Home() {
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
         />
-        {/* <div className="w-5/6 mx-auto md:h-full">
+        <div className="w-5/6 mx-auto md:h-full">
           {isDesktop && (
             <DotGroup
               selectedPage={selectedPage}
@@ -50,10 +50,10 @@ export default function Home() {
             amount="all"
             onViewportEnter={() => setSelectedPage("home")}
           >
-            <Landing setSelectedPage={setSelectedPage} />
+            {/* <Landing setSelectedPage={setSelectedPage} /> */}
           </motion.div>
         </div>
-        <LineGradient />
+        {/* <LineGradient />
         <div className="w-5/6 mx-auto md:h-full ">
           <motion.div
             margin="0 0 -200px 0"
