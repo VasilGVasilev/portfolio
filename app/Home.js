@@ -1,6 +1,6 @@
 'use client'
 
-// import Navbar from "./scenes/Navbar";
+import Navbar from "../components/Navbar";
 // import Landing from "./scenes/Landing";
 // import DotGroup from "./scenes/DotGroup";
 // import MySkills from "./scenes/MySkills";
@@ -32,13 +32,13 @@ export default function Home() {
   
     return (
       <div className="bg-deep-blue">
-        asd
-        {/* <Navbar
+        {/* navbar is not in layout because layout cannot pass on props and context is too complex for the current app magnitude */}
+        <Navbar
           isTopOfPage={isTopOfPage}
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
         />
-        <div className="w-5/6 mx-auto md:h-full">
+        {/* <div className="w-5/6 mx-auto md:h-full">
           {isDesktop && (
             <DotGroup
               selectedPage={selectedPage}

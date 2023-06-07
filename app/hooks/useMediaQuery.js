@@ -1,5 +1,5 @@
 // using this hook for dots refering to components, tailwind inline media query is not enough
-// on every resize we check if query param ("(min-width: 1060px)") matches the current size of desktop and if yes, we return true which as a Boolean has significance in Home.js
+// on every resize we check if query param ("(min-width: 1060px)" or "(min-width: 768px)") matches the current size of desktop and if yes, we return true which as a Boolean has significance in Home.js
 
 import { useState, useEffect } from "react";
 
