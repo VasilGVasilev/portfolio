@@ -7,3 +7,10 @@ JSX is a superset of Javascript (JS + XML). It was developed by Meta for string 
 
 ### Others:
 JIT - If you are using the Next.js App Router, you do not need to set the JIT mode of Tailwind CSS as it is automatically enabled by Next.js. This is because Next.js uses the new Just-in-Time (JIT) engine by default, which allows for faster and more optimized CSS loading.
+
+Relative div and absolute pseudo ::before ::after:
+
+sh```const selectedStyles = `relative bg-yellow before:absolute before:w-6 before:h-6 before:rounded-full
+    before:border-2 before:border-yellow before:left-[-50%] before:top-[-50%]`;```
+
+The before pseudo-element is absolute relative to the div in whose className it is declared.
