@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 // import { motion } from "framer-motion";
 
 export default function Home() {
-    const [selectedPage, setSelectedPage] = useState("home");
+    const [selectedPage, setSelectedPage] = useState("home"); //where are we navigationwise
     const [isTopOfPage, setIsTopOfPage] = useState(true);
     const isDesktop = useMediaQuery("(min-width: 1060px)");
   
@@ -31,7 +31,8 @@ export default function Home() {
     }, []);
   
     return (
-      <div className="app bg-deep-blue">
+      <div className="bg-deep-blue">
+        asd
         {/* <Navbar
           isTopOfPage={isTopOfPage}
           selectedPage={selectedPage}
