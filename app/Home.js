@@ -1,7 +1,7 @@
 'use client'
 
 import Navbar from "../components/Navbar";
-// import Landing from "./scenes/Landing";
+import Landing from "../components/Landing";
 import DotGroup from "../components/DotGroup";
 // import MySkills from "./scenes/MySkills";
 // import LineGradient from "./components/LineGradient";
@@ -50,7 +50,7 @@ export default function Home() {
           amount="all"
           onViewportEnter={() => setSelectedPage("home")}
         >
-          {/* <Landing setSelectedPage={setSelectedPage} /> */}
+          <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
       </div>
       {/* <LineGradient />
