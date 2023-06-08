@@ -10,6 +10,7 @@ const Landing = ({ setSelectedPage }) => {
       id="home"
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
     >
+      {/* basis and order are set like that bacause on mobile we first see img then text, if on desktop -> img is ordered 2 and proportion img <-> text is 3/5 <-> 2/5 */}
       {/* IMAGE SECTION */}
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
