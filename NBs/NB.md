@@ -6,6 +6,7 @@ There is a flickering on desktop mode refresh of page due to useMediaQuery hook 
 - Better navbar, especially, the change of color on window.scrollY !== 0
 - see https://grandhotelmillenniumsofia.bg/bg/nachalo/ how the navbar is actually below the initial video
 - make description text be squared from both sides and maybe have a glance
+- timeline circles need to be implementing the whileInView pop-up, namely, https://codesandbox.io/s/framer-motion-value-specific-transitions-yf5siw?from-embed, also see hidden/visible year and relative to that year text
 
 ### Others: 
 
