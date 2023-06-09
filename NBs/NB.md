@@ -4,6 +4,8 @@ There is a flickering on desktop mode refresh of page due to useMediaQuery hook 
 ### Improvements for Ixora:
 - mx-auto centers the contained div within the container div based on the x axis
 - Better navbar, especially, the change of color on window.scrollY !== 0
+- see https://grandhotelmillenniumsofia.bg/bg/nachalo/ how the navbar is actually below the initial video
+- make description text be squared from both sides and maybe have a glance
 
 ### Others: 
 
