@@ -9,6 +9,8 @@ There is a flickering on desktop mode refresh of page due to useMediaQuery hook 
 
 ### Others: 
 
+- motion div explained at https://youtu.be/JSJ8ftr92Vw?t=4187
+
 - basis (flex-basis) is a better alternative than width to use for determining the initial size of flex items. Rule of thumb -> if you have a flex item, this div's children's size (width) should be set via basis.
 
 - Why do we need JSX?
