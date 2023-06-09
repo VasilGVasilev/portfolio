@@ -15,11 +15,13 @@ const Landing = ({ setSelectedPage }) => {
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
+          // before:w-full before:max-w-[400px] md:before:max-w-[600px], biggest width but not more than 400px, 600px
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
             before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
             <img
               alt="profile"
+              // filter is not actually necessary, you can go ahead with saturate-200 directly
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
               src="/assets/profile-image.png"
             />
