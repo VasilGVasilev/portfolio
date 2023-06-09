@@ -28,10 +28,10 @@ module.exports = {
       },
       // content relating to ::before hover
       content: {
-        brush: "url('/public/assets/brush.png')",
-        person1: "url('/public/assets/person-1.png')",
-        person2: "url('/public/assets/person-2.png')",
-        person3: "url('/public/assets/person-3.png')",
+        brush: "url('/assets/brush.png')",
+        person1: "url('/assets/person-1.png')",
+        person2: "url('/assets/person-2.png')",
+        person3: "url('/assets/person-3.png')",
       },
     },
     screens: {
