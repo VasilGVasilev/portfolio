@@ -30,7 +30,7 @@ const Landing = ({ setSelectedPage }) => {
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
+            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
             src="/assets/profile-image.png"
           />
         )}
@@ -73,6 +73,7 @@ const Landing = ({ setSelectedPage }) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
+          // slight delay 
           transition={{ delay: 0.2, duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
@@ -104,6 +105,7 @@ const Landing = ({ setSelectedPage }) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
+          // slight delay 
           transition={{ delay: 0.4, duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
