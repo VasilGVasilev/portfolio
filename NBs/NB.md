@@ -12,6 +12,27 @@ There is a flickering on desktop mode refresh of page due to useMediaQuery hook 
 
 - motion div explained at https://youtu.be/JSJ8ftr92Vw?t=4187
 
+for more info on this one see Scroll section of official docs
+
+```sh 
+<motion.div
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.5 }}
+    transition={{ duration: 0.5 }}
+    variants={{
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0 },
+    }}
+></motion.div>
+```
+
+    initial -> the initial state
+    whileInView -> the state when the element enters/leaves viewport
+    viewport -> defines how the viewport is detected, once half of div is visible
+
+    variatns -> sets of predefined targets - makes it possible to have a whole set of animations by naming them with one overreaching name, ex. hidden, visible
+
 - basis (flex-basis) is a better alternative than width to use for determining the initial size of flex items. Rule of thumb -> if you have a flex item, this div's children's size (width) should be set via basis.
 
 - Why do we need JSX?

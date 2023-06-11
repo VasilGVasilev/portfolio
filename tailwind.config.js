@@ -23,9 +23,6 @@ module.exports = {
         "gradient-rainblue":
           "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
       }),
-      fontFamily: {
-        roboto: ["Roboto", "serif"],
-      },
       // content relating to ::before hover
       content: {
         brush: "url('/assets/brush.png')",

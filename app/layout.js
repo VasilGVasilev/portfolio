@@ -1,14 +1,7 @@
 'use client'
 
 import './globals.css'
-
-import { Roboto } from 'next/font/google';
- 
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-});
+import { roboto } from './fonts'
 
 import Link from 'next/link'
 import Image from 'next/image'

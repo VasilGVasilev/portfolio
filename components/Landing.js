@@ -2,6 +2,7 @@ import SocialMediaIcons from "./SocialMediaIcons";
 import useMediaQuery from "@/app/hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { playfair } from "@/app/fonts";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -48,17 +49,18 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
+          <p className={`text-6xl ${playfair.className} z-10 text-center md:text-start`} >
             Jane {""}
+            {/* before+content to attach the image brush to the text */}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
-              before:absolute before:-left-[35px] before:-top-[110px] before:z-[-1]"
+              before:absolute before:-left-[35px] before:-top-[120px] before:z-[-1]"
             >
               Esper
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
+          <p className="mt-20 mb-7 text-sm text-center md:text-start">
             Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
             viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
           </p>
@@ -89,7 +91,7 @@ const Landing = ({ setSelectedPage }) => {
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+            <div className={`${playfair.className} bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10`}>
               Let's talk.
             </div>
           </Link>
