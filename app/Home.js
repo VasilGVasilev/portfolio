@@ -1,10 +1,10 @@
 'use client'
 
-import Navbar from "../components/Navbar";
-import Landing from "../components/Landing";
-import DotGroup from "../components/DotGroup";
-// import MySkills from "./scenes/MySkills";
-// import LineGradient from "./components/LineGradient";
+import Navbar from "@/components/Navbar";
+import Landing from "@/components/Landing";
+import DotGroup from "@/components/DotGroup";
+import MySkills from "@/components/MySkills";
+import LineGradient from "@/components/LineGradient";
 // import Projects from "./scenes/Projects";
 // import Contact from "./scenes/Contact";
 // import Footer from "./scenes/Footer";
@@ -38,6 +38,7 @@ export default function Home() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
+
       <div className="w-5/6 mx-auto md:h-full">
         {isDesktop && (
           <DotGroup
@@ -53,17 +54,19 @@ export default function Home() {
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
       </div>
-      {/* <LineGradient />
-        <div className="w-5/6 mx-auto md:h-full ">
-          <motion.div
-            margin="0 0 -200px 0"
-            amount="all"
-            onViewportEnter={() => setSelectedPage("skills")}
-          >
-            <MySkills />
-          </motion.div>
-        </div>
-        <LineGradient />
+
+      <LineGradient />
+
+      <div className="w-5/6 mx-auto md:h-full ">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("skills")}
+        >
+          <MySkills />
+        </motion.div>
+      </div>
+        {/* <LineGradient />
         <div className="w-5/6 mx-auto">
           <motion.div
             margin="0 0 -200px 0"
