@@ -11,22 +11,41 @@ set all fonts to be optmised for next js
 
 ### Others: 
 
-- motion div explained at https://youtu.be/JSJ8ftr92Vw?t=4187
+- Overriding the default value:
 
-for more info on this one see Scroll section of official docs
+    ```sh
+    const LineGradient = ({ width = "w-full" }) => {
+        return <div className={`h-0.5 ${width} bg-gradient-rainblue`} />;
+    };
+    
+    export default LineGradient;
+    ```
+    If I import LineGradient, this 'w-full' is only valid as far as I do not actually assign a new value as s prop when importing the component: 
+    ```sh
+    <LineGradient width="w-1/2" />
+    ```
+    "w-1/2" will override "w-full"
 
-```sh 
-<motion.div
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, amount: 0.5 }}
-    transition={{ duration: 0.5 }}
-    variants={{
-    hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0 },
-    }}
-></motion.div>
-```
+
+- Hover and Active pseudo selectors:
+    If you're not intending to have different styles for the active state, there is no need to set the active pseudo-selector.
+
+- Motion div explained at https://youtu.be/JSJ8ftr92Vw?t=4187
+
+    for more info on this one see Scroll section of official docs
+
+    ```sh 
+    <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+        hidden: { opacity: 0, x: -50 },
+        visible: { opacity: 1, x: 0 },
+        }}
+    ></motion.div>
+    ```
 
     initial -> the initial state
     whileInView -> the state when the element enters/leaves viewport
@@ -34,7 +53,8 @@ for more info on this one see Scroll section of official docs
 
     variatns -> sets of predefined targets - makes it possible to have a whole set of animations by naming them with one overreaching name, ex. hidden, visible
 
-- basis (flex-basis) is a better alternative than width to use for determining the initial size of flex items. Rule of thumb -> if you have a flex item, this div's children's size (width) should be set via basis.
+- basis (flex-basis) 
+    A better alternative than width to use for determining the initial size of flex items. Rule of thumb -> if  you have a flex item, this div's children's size (width) should be set via basis.
 
 - Why do we need JSX?
     JSX is a superset of Javascript (JS + XML). It was developed by Meta for string interpolation /combining logic and markup/. It can be used in React, but also plain Javascript will do the same. Some schools of thaught advocate the use of JSX for components and that be separate from the JS files that deal with hooks, contexts and other logical structures.
