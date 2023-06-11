@@ -4,7 +4,9 @@ const SocialMediaIcons = () => {
         <a
           className="hover:opacity-50 transition duration-300"
           href="https://www.linkedin.com"
+          // open new tab
           target="_blank"
+          // no bugs with older browsers
           rel="noreferrer"
         >
           <img alt="linkedin-link" src="/assets/linkedin.png" />
