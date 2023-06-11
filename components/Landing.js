@@ -50,6 +50,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className={`text-6xl ${playfair.className} z-10 text-center md:text-start`} >
+            {/* {""} gives us space between Jane and Esper (due to Esper being within a span) */}
             Jane {""}
             {/* before+content to attach the image brush to the text */}
             <span
@@ -80,18 +81,19 @@ const Landing = ({ setSelectedPage }) => {
         >
           <Link
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
-              hover:bg-blue hover:text-white transition duration-500"
+              hover:bg-blue hover:text-white transition duration-300"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             Contact Me
           </Link>
           <Link
+          // padding and bg create the illusion of a border
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className={`${playfair.className} bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10`}>
+            <div className={`${playfair.className} bg-deep-blue hover:text-red transition duration-300 w-full h-full flex items-center justify-center px-10`}>
               Let's talk.
             </div>
           </Link>

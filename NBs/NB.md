@@ -1,5 +1,6 @@
 ### TODOs:
 There is a flickering on desktop mode refresh of page due to useMediaQuery hook deciding on the layout
+set all fonts to be optmised for next js
 
 ### Improvements for Ixora:
 - mx-auto centers the contained div within the container div based on the x axis

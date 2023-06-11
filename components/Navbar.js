@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link"; 
 import useMediaQuery from "@/app/hooks/useMediaQuery";
+import { opensans } from "@/app/fonts";
 
 // props: 
 // - name of link, must be constant
@@ -38,7 +39,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
-          <div className="flex justify-between gap-16 font-opensans text-base font-semibold">
+          <div className={`${opensans.className} flex justify-between gap-16 text-base font-semibold`}>
             <LinkTemplate
               page="Home"
               selectedPage={selectedPage}
