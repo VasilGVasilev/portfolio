@@ -7,8 +7,8 @@ import MySkills from "@/components/MySkills";
 import LineGradient from "@/components/LineGradient";
 import Projects from "@/components/Projects";
 import Testimonials from "@/components/Testimonials";
-// import Contact from "./scenes/Contact";
-// import Footer from "./scenes/Footer";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -93,16 +93,18 @@ export default function Home() {
 
       <LineGradient />
 
-        {/* <div className="w-5/6 mx-auto md:h-full">
-          <motion.div
-            margin="0 0 -200px 0"
-            amount="all"
-            onViewportEnter={() => setSelectedPage("contact")}
-          >
-            <Contact />
-          </motion.div>
-        </div>
-        <Footer /> */}
+      <div className="w-5/6 mx-auto md:h-full">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("contact")}
+        >
+          <Contact />
+        </motion.div>
+      </div>
+
+      <Footer />
+
     </div>
   );
 }
