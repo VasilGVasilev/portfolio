@@ -9,7 +9,13 @@ set all fonts to be optmised for next js
 - make description text be squared from both sides and maybe have a glance
 - timeline circles need to be implementing the whileInView pop-up, namely, https://codesandbox.io/s/framer-motion-value-specific-transitions-yf5siw?from-embed, also see hidden/visible year and relative to that year text
 
-### Others: 
+### Others:
+- <Link> and #ref
+    See how each Link component has a <Link href={`#${lowerCasePage}`}> example -> <section id="projects" className="pt-48 pb-48" >
+
+- mx-auto
+
+    A utility class in Tailwind CSS used to center an element horizontally within its parent container, it sets the left and right margins to auto, which allows the element to be horizontally centered within its parent container
 
 - Overriding the default value:
 

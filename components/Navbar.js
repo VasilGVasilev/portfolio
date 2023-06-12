@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link"; 
 import useMediaQuery from "@/app/hooks/useMediaQuery";
-import { opensans } from "@/app/fonts";
+import { opensans, playfair } from "@/app/fonts";
 
 // props: 
 // - name of link, must be constant
@@ -35,7 +35,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">JE</h4>
+        <h4 className={`${playfair.className} text-3xl font-bold`}>JE</h4>
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
