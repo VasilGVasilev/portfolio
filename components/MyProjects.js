@@ -3,10 +3,10 @@ import useMediaQuery from "@/app/hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import { playfair } from "@/app/fonts";
 
-const MySkills = () => {
+const MyProjects = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className="pt-10 pb-24">
+    <section id="projects" className="pt-10 pb-24">
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
 
@@ -23,7 +23,7 @@ const MySkills = () => {
           }}
         >
           <p className={`${playfair.className} font-semibold text-4xl mb-5`}>
-            MY <span className="text-red">SKILLS</span>
+            MY <span className="text-red">PROJECTS</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
@@ -144,4 +144,4 @@ const MySkills = () => {
   );
 };
 
-export default MySkills;
+export default MyProjects;

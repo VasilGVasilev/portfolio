@@ -14,30 +14,30 @@ const container = {
 };
 
 // smooth landing with parachute effect
-const projectVariant = {
+const articleVariant = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, subtitle }) => {
+const Article = ({ title, subtitle }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-700
     bg-grey z-30 flex flex-col justify-center items-center text-center p-10 text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
+  const articleTitle = title.split(" ").join("-").toLowerCase();
 
   return (
-    <motion.div variants={projectVariant} className="relative">
+    <motion.div variants={articleVariant} className="relative">
       <div className={overlayStyles}>
         <p className={`${playfair.className} text-2xl`}>{title}</p>
         <p className="mt-7">{subtitle}</p>
       </div>
-      <img src={`/assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      <img src={`/assets/${articleTitle}.jpeg`} alt={articleTitle} />
     </motion.div>
   );
 };
 
-const Projects = () => {
+const Articles = () => {
   return (
-    <section id="projects" className="pt-48 pb-48">
+    <section id="articles" className="pt-48 pb-48">
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"
@@ -52,7 +52,7 @@ const Projects = () => {
       >
         <div>
           <p className={`${playfair.className} font-semibold text-4xl`}>
-            <span className="text-red">PRO</span>JECTS
+            <span className="text-red">ART</span>ICLES
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
@@ -65,7 +65,7 @@ const Projects = () => {
         </p>
       </motion.div>
 
-      {/* PROJECTS */}
+      {/* ARTICLES */}
       <div className="flex justify-center">
         <motion.div
           className="sm:grid sm:grid-cols-3"
@@ -81,17 +81,17 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" subtitle='Project 1 substitle' />
-          <Project title="Project 2" subtitle='Project 1 substitle' />
+          <Article title="Article 1" subtitle='Article 1 substitle' />
+          <Article title="Article 2" subtitle='Article 1 substitle' />
 
           {/* ROW 2 */}
-          <Project title="Project 3" subtitle='Project 1 substitle' />
-          <Project title="Project 4" subtitle='Project 1 substitle' />
-          <Project title="Project 5" subtitle='Project 1 substitle' />
+          <Article title="Article 3" subtitle='Article 1 substitle' />
+          <Article title="Article 4" subtitle='Article 1 substitle' />
+          <Article title="Article 5" subtitle='Article 1 substitle' />
 
           {/* ROW 3 */}
-          <Project title="Project 6" subtitle='Project 1 substitle' />
-          <Project title="Project 7" subtitle='Project 1 substitle' />
+          <Article title="Article 6" subtitle='Article 1 substitle' />
+          <Article title="Article 7" subtitle='Article 1 substitle' />
           <div
             className={`${playfair.className} flex justify-center text-center items-center p-10 bg-blue
             max-w-[400px] max-h-[400px] text-2xl font-semibold`}
@@ -104,4 +104,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Articles;

@@ -3,10 +3,10 @@
 import Navbar from "@/components/Navbar";
 import Landing from "@/components/Landing";
 import DotGroup from "@/components/DotGroup";
-import MySkills from "@/components/MySkills";
+import MyProjects from "@/components/MyProjects";
 import LineGradient from "@/components/LineGradient";
-import Projects from "@/components/Projects";
-import Testimonials from "@/components/Testimonials";
+import Articles from "@/components/Articles";
+import Qualifications from "@/components/Qualifications";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
@@ -61,9 +61,9 @@ export default function Home() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("skills")}
+          onViewportEnter={() => setSelectedPage("projects")}
         >
-          <MySkills />
+          <MyProjects />
         </motion.div>
       </div>
 
@@ -73,9 +73,9 @@ export default function Home() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("projects")}
+          onViewportEnter={() => setSelectedPage("articles")}
         >
-          <Projects />
+          <Articles />
         </motion.div>
       </div>
       
@@ -85,9 +85,9 @@ export default function Home() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("testimonials")}
+          onViewportEnter={() => setSelectedPage("qualifications")}
         >
-          <Testimonials />
+          <Qualifications />
         </motion.div>
       </div>
 

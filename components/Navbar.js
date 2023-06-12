@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "next/link"; 
 import useMediaQuery from "@/app/hooks/useMediaQuery";
 import { opensans, playfair } from "@/app/fonts";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 // props: 
 // - name of link, must be constant
@@ -15,15 +16,15 @@ import { opensans, playfair } from "@/app/fonts";
 const LinkTemplate = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
-    <Link
+    <AnchorLink
       className={`${
-        selectedPage === lowerCasePage ? "text-deep-blue" : ""
-      } hover:text-yellow active:text-yellow transition duration-500`}
+        selectedPage === lowerCasePage ? "text-[#facc15]" : ""
+      }  hover:scale-125 transition duration-300`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
       {page}
-    </Link>
+    </AnchorLink>
   );
 };
 
@@ -35,7 +36,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className={`${playfair.className} text-3xl font-bold`}>VV</h4>
+        <AnchorLink href={'#home'} ><h4 className={`${playfair.className} text-3xl font-bold`}>V. V.</h4></AnchorLink> 
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
@@ -46,17 +47,17 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
             />
             <LinkTemplate
-              page="Skills"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <LinkTemplate
               page="Projects"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <LinkTemplate
-              page="Testimonials"
+              page="Articles"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <LinkTemplate
+              page="Qualifications"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -93,17 +94,17 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 setSelectedPage={setSelectedPage}
               />
               <LinkTemplate
-                page="Skills"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <LinkTemplate
                 page="Projects"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <LinkTemplate
-                page="Testimonials"
+                page="Articles"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <LinkTemplate
+                page="Qualifications"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
