@@ -23,14 +23,14 @@ const Landing = ({ setSelectedPage }) => {
             <img
               alt="profile"
               // filter is not actually necessary, you can go ahead with saturate-200 directly
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full rounded-t-[400px] max-w-[400px] md:max-w-[600px]"
               src="/assets/profile-image.png"
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full rounded-t-[400px] max-w-[400px] md:max-w-[600px]"
             src="/assets/profile-image.png"
           />
         )}
@@ -51,13 +51,13 @@ const Landing = ({ setSelectedPage }) => {
         >
           <p className={`text-6xl ${playfair.className} z-10 text-center md:text-start`} >
             {/* {""} gives us space between Jane and Esper (due to Esper being within a span) */}
-            Jane {""}
+            Vasil {""}
             {/* before+content to attach the image brush to the text */}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
               before:absolute before:-left-[35px] before:-top-[120px] before:z-[-1]"
             >
-              Esper
+              Vasilev
             </span>
           </p>
 
@@ -91,11 +91,11 @@ const Landing = ({ setSelectedPage }) => {
           <Link
           // padding and bg create the illusion of a border
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
+            href="VasilVasilevCV.pdf"
+            download
           >
             <div className={`${playfair.className} bg-deep-blue hover:text-red transition duration-300 w-full h-full flex items-center justify-center px-10`}>
-              Let's talk.
+              My CV
             </div>
           </Link>
         </motion.div>

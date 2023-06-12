@@ -1,40 +1,36 @@
+import Link from "next/link";
+
+
 const SocialMediaIcons = () => {
     return (
       <div className="flex justify-center md:justify-start my-10 gap-7">
-        <a
+        <Link
           className="hover:opacity-50 transition duration-300"
-          href="https://www.linkedin.com"
+          href="https://github.com/VasilGVasilev"
           // open new tab
           target="_blank"
           // no bugs with older browsers
           rel="noreferrer"
         >
+          <img alt="github-link" src="/assets/github.png" />
+        </Link>
+        <Link
+          className="hover:opacity-50 transition duration-300"
+          href="https://uk.linkedin.com/in/vasil-vasilev-28621b178"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img alt="linkedin-link" src="/assets/linkedin.png" />
-        </a>
-        <a
+        </Link>
+        <Link
           className="hover:opacity-50 transition duration-300"
-          href="https://www.twitter.com"
+          href="mailto:vasilgvasilev97@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
-          <img alt="twitter-link" src="/assets/twitter.png" />
-        </a>
-        <a
-          className="hover:opacity-50 transition duration-300"
-          href="https://www.facebook.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img alt="facebook-link" src="/assets/facebook.png" />
-        </a>
-        <a
-          className="hover:opacity-50 transition duration-300"
-          href="https://www.instagram.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img alt="instagram-link" src="/assets/instagram.png" />
-        </a>
+          <img alt="gmail-link" src="/assets/gmail.png" />
+        </Link>
+
       </div>
     );
   };

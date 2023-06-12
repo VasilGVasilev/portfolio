@@ -1,12 +1,7 @@
-'use client'
 
 import './globals.css'
 import { roboto } from './fonts'
 
-import Link from 'next/link'
-import Image from 'next/image'
-import { useState } from 'react'
-import { imageLoader } from './imgLoader'
 
 export default function RootLayout({ children }) {
 
