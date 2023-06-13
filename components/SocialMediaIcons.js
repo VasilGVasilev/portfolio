@@ -30,6 +30,14 @@ const SocialMediaIcons = () => {
         >
           <img alt="gmail-link" src="/assets/gmail.png" />
         </Link>
+        <Link
+          className="hover:opacity-50 transition duration-300"
+          href="tel:+359884336793"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img alt="phone-link" src="/assets/phone.png" />
+        </Link>
 
       </div>
     );
