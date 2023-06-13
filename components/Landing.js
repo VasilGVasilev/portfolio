@@ -55,15 +55,14 @@ const Landing = ({ setSelectedPage }) => {
             {/* before+content to attach the image brush to the text */}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
-              before:absolute before:-left-[35px] before:-top-[120px] before:z-[-1]"
+              before:absolute before:-left-[15px] before:-top-[10px] before:z-[-1]"
             >
               Vasilev
             </span>
           </p>
 
           <p className="mt-20 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+            Hey, I am Vasil Vasilev. A passionate React Developer based in Sofia, Bulgaria. 📍 
           </p>
         </motion.div>
 

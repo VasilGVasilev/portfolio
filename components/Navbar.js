@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Link from "next/link"; 
 import useMediaQuery from "@/app/hooks/useMediaQuery";
 import { opensans, playfair } from "@/app/fonts";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -31,12 +30,12 @@ const LinkTemplate = ({ page, selectedPage, setSelectedPage }) => {
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-yellow";
+  const navbarBackground = isTopOfPage ? "" : "bg-blue";
 
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <AnchorLink href={'#home'} ><h4 className={`${playfair.className} text-3xl font-bold`}>V. V.</h4></AnchorLink> 
+        <AnchorLink href={'#home'} ><h4 className={`${playfair.className} text-3xl font-bold`}>Vasilev</h4></AnchorLink> 
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
