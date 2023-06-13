@@ -1,5 +1,6 @@
 import { playfair } from "@/app/fonts";
 
+// TODO: stagger chidlren imgs
 
 const TechStackIcons = () => {
     return (
