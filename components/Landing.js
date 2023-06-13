@@ -3,6 +3,7 @@ import useMediaQuery from "@/app/hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { playfair } from "@/app/fonts";
+import TechStackIcons from "./TechStackIcons";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -61,7 +62,7 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
 
-          <p className="mt-20 mb-7 text-sm text-center md:text-start">
+          <p className="mt-20 mb-7 text-center md:text-start">
             Hey, I am Vasil Vasilev. A passionate React Developer based in Sofia, Bulgaria. 📍 
           </p>
         </motion.div>
@@ -113,7 +114,24 @@ const Landing = ({ setSelectedPage }) => {
         >
           <SocialMediaIcons />
         </motion.div>
+
+        <motion.div
+          className="flex mt-5 justify-center md:justify-start"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          // slight delay 
+          transition={{ delay: 0.6, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <TechStackIcons />
+        </motion.div>
+
       </div>
+      
     </section>
   );
 };

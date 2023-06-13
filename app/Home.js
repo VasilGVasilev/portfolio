@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Landing from "@/components/Landing";
+import TechStackIcons from "@/components/TechStackIcons";
 import DotGroup from "@/components/DotGroup";
 import MyProjects from "@/components/MyProjects";
 import LineGradient from "@/components/LineGradient";
@@ -54,6 +55,8 @@ export default function Home() {
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
       </div>
+
+
 
       <LineGradient />
 
