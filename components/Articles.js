@@ -59,9 +59,8 @@ const Articles = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+          The following articles represent some brief explanations and solutions to fundamental problems I incurred during the development
+          of my projects.  
         </p>
       </motion.div>
 
@@ -79,7 +78,7 @@ const Articles = () => {
             className={`${playfair.className} flex justify-center text-center items-center p-10 bg-red
             max-w-[400px] max-h-[400px] text-2xl font-semibold`}
           >
-            BEAUTIFUL USER INTERFACES
+            EVERY CONCEPT IS FEASIBLE
           </div>
           <Article title="Article 1" subtitle='Article 1 substitle' />
           <Article title="Article 2" subtitle='Article 1 substitle' />
@@ -96,7 +95,7 @@ const Articles = () => {
             className={`${playfair.className} flex justify-center text-center items-center p-10 bg-blue
             max-w-[400px] max-h-[400px] text-2xl font-semibold`}
           >
-            SMOOTH USER EXPERIENCE
+            IF YOU UNDERSTAND WHAT IS UNDER THE HOOD
           </div>
         </motion.div>
       </div>
