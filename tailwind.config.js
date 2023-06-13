@@ -29,6 +29,8 @@ module.exports = {
         softuni: "url('/assets/softuni.png')",
         kings: "url('/assets/kings.png')",
         humboldt: "url('/assets/humboldt.png')",
+        "project-one": "url('/assets/project-one.webp')",
+
       },
     },
     screens: {

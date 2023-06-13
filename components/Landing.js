@@ -63,7 +63,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-20 mb-7 text-center md:text-start">
-            Hey, I am Vasil Vasilev. A passionate React Developer based in Sofia, Bulgaria. 📍 
+            Hey, I am Vasil Vasilev. A passionate Web Developer based in Sofia, Bulgaria. 📍 
           </p>
         </motion.div>
 

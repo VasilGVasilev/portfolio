@@ -2,6 +2,7 @@ import LineGradient from "./LineGradient";
 import useMediaQuery from "@/app/hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import { playfair } from "@/app/fonts";
+import Link from "next/link";
 
 const MyProjects = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -23,7 +24,7 @@ const MyProjects = () => {
           }}
         >
           <p className={`${playfair.className} font-semibold text-4xl mb-5`}>
-            MY <span className="text-red">PROJECTS</span>
+            <span className="text-red">PRO</span>JECTS
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
@@ -70,16 +71,22 @@ const MyProjects = () => {
             <div className="z-10 absolute">
               <p className={`${playfair.className}  font-semibold text-5xl`}>01</p>
               <p className={`${playfair.className}  font-semibold text-3xl mt-3`}>
-                Experience
+                Ixora Residence
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[1]" />
           </div>
           <p className="mt-5">
-              A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-              morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-              odio sit sagittis,
+              A SSG website for a freelance project developed via Next.js, Tailwind, React.
+               The main feature is change of color signifying the apartment status - sold, available, reserved.
           </p>
+          <div className="w-[100%] h-[100%] mt-5 overflow-hidden mx-auto ">
+            {/* The CSS OVERFLOW property controls what happens to content that is too big to fit into an area. */}
+            <Link href={"https://ixorabg.com/"} >
+              <img src="assets/project-one.webp" alt="ixroa-img" className=" transition-transform duration-500 ease-in-out hover:scale-125" />
+            </Link>
+          </div>
+          
         </motion.div>
 
         {/* INNOVATIVE */}
