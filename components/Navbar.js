@@ -35,7 +35,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <AnchorLink href={'#home'} ><h4 className={`${playfair.className} text-3xl font-bold`}>Vasilev</h4></AnchorLink> 
+        <AnchorLink href={'#home'} ><h4 className={`${playfair.className} text-3xl font-bold`}>Vasil Vasilev</h4></AnchorLink> 
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
