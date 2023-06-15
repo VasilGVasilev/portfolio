@@ -10,6 +10,9 @@ set all fonts to be optmised for next js
 - timeline circles need to be implementing the whileInView pop-up, namely, https://codesandbox.io/s/framer-motion-value-specific-transitions-yf5siw?from-embed, also see hidden/visible year and relative to that year text
 
 ### Others:
+- Tailwind applies before rendering
+ See MyProject passing of border color prop for each project
+ Rule: Tailwind CSS applies styles before rendering. When using Tailwind CSS in Next.js, the styles are applied during the build process, and only the necessary CSS styles are included in the final bundle. This helps optimize the performance of the application by reducing the amount of CSS that needs to be loaded by the browser.
 - <Link> and #ref
     See how each Link component has a <Link href={`#${lowerCasePage}`}> example -> <section id="projects" className="pt-48 pb-48" >
 

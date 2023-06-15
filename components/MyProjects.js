@@ -4,19 +4,12 @@ import { motion } from "framer-motion";
 import { playfair } from "@/app/fonts";
 import Link from "next/link";
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
 
-const Project = ({ number, color, url, altLink, srcImg, projectName, projectDesc }) => {
-  const overlayStyles = `md:w-1/3 mt-10 relative z-0 ml-20 p-16 before:absolute before:bottom-10 before:right-10
-  before:w-full before:h-full before:border-2 before:border-${color} before:z-[-1]`;
 
+const Project = ({ number, color, projectBorder, pictureLinkBorder, url, altLink, srcImg, projectName, projectDesc }) => {
+  const overlayStyles = `md:w-1/3 mt-10 relative z-0 p-10 xl:ml-20 xl:p-16 before:absolute before:bottom-10 before:right-10
+  before:w-full before:h-full before:border-4 ${projectBorder} before:z-[-1]`;
+  const borderColor = `w-full h-fit border-t-4 border-r-4 ${pictureLinkBorder} m-5 overflow-hidden mx-auto`
   return (
       <motion.div
       className={overlayStyles}
@@ -41,7 +34,7 @@ const Project = ({ number, color, url, altLink, srcImg, projectName, projectDesc
       <p className="mt-5">
           {projectDesc}
       </p>
-      <div className={`w-full h-fit m-5 overflow-hidden mx-auto border-${color} border-t-4 border-r-4`}>
+      <div className={borderColor}>
         {/* The CSS OVERFLOW property controls what happens to content that is too big to fit into an area. */}
         <Link href={url} >
           <img src={srcImg} alt={altLink} className="transition-transform duration-700 ease-in-out hover:scale-150" />
@@ -105,7 +98,9 @@ const MyProjects = () => {
         {/* IXORA */}
         <Project
           number='1' 
-          color="blue" 
+          color="blue"
+          projectBorder="before:border-blue"
+          pictureLinkBorder="border-blue" 
           url="https://ixorabg.com/" 
           altLink="ixroa-img" 
           srcImg="assets/project-one.webp" 
@@ -116,7 +111,9 @@ const MyProjects = () => {
         {/* OTHER */}
         <Project 
           number='2' 
-          color="red" 
+          color="red"
+          projectBorder="before:border-red"
+          pictureLinkBorder="border-red"  
           url="https://ixorabg.com/" 
           altLink="ixroa-img" 
           srcImg="assets/project-one.webp" 
@@ -127,7 +124,9 @@ const MyProjects = () => {
         {/* OTHER */}
         <Project 
           number='3' 
-          color="yellow" 
+          color="yellow"
+          projectBorder="before:border-yellow"
+          pictureLinkBorder="border-yellow"  
           url="https://ixorabg.com/" 
           altLink="ixroa-img" 
           srcImg="assets/project-one.webp" 
