@@ -2,7 +2,6 @@
 
 import Navbar from "@/components/Navbar";
 import Landing from "@/components/Landing";
-import TechStackIcons from "@/components/TechStackIcons";
 import DotGroup from "@/components/DotGroup";
 import MyProjects from "@/components/MyProjects";
 import LineGradient from "@/components/LineGradient";
@@ -13,6 +12,7 @@ import Footer from "@/components/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+
 
 export default function Home() {
   const [selectedPage, setSelectedPage] = useState("home"); //where are we navigationwise
@@ -48,8 +48,7 @@ export default function Home() {
           />
         )}
         <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
+          className="mt-50"
           onViewportEnter={() => setSelectedPage("home")}
         >
           <Landing setSelectedPage={setSelectedPage} />
@@ -62,8 +61,7 @@ export default function Home() {
 
       <div className="w-5/6 mx-auto md:h-full ">
         <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
+          className="mt-50"
           onViewportEnter={() => setSelectedPage("projects")}
         >
           <MyProjects />
@@ -74,7 +72,7 @@ export default function Home() {
 
       <div className="w-5/6 mx-auto">
         <motion.div
-          margin="0 0 -200px 0"
+          className="mt-50"
           amount="all"
           onViewportEnter={() => setSelectedPage("articles")}
         >
@@ -86,8 +84,7 @@ export default function Home() {
 
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
+          className="mt-50"
           onViewportEnter={() => setSelectedPage("qualifications")}
         >
           <Qualifications />
@@ -98,8 +95,7 @@ export default function Home() {
 
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
+          className="mt-50"
           onViewportEnter={() => setSelectedPage("contact")}
         >
           <Contact />

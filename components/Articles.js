@@ -13,7 +13,6 @@ const container = {
   },
 };
 
-// smooth landing with parachute effect
 const articleVariant = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: { opacity: 1, scale: 1 },
@@ -38,6 +37,7 @@ const Article = ({ title, subtitle }) => {
 const Articles = () => {
   return (
     <section id="articles" className="pt-48 pb-48">
+
       {/* HEADINGS */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"

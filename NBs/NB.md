@@ -10,6 +10,47 @@ set all fonts to be optmised for next js
 - timeline circles need to be implementing the whileInView pop-up, namely, https://codesandbox.io/s/framer-motion-value-specific-transitions-yf5siw?from-embed, also see hidden/visible year and relative to that year text
 
 ### Others:
+- staggerChildren
+    works when the children of the parent motion.div are also motion.divs:
+```sh
+    const container = {
+        hidden: {},
+        visible: {
+            transition: {
+            staggerChildren: 0.2,
+            },
+        },
+    };
+
+        const articleVariant = {
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: { opacity: 1, scale: 1 },
+    };
+
+    <motion.div
+        className="flex"
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+    >
+        <motion.div variants={articleVariant}>
+            <div>
+                1
+            </div>
+        </motion.div>
+        <motion.div variants={articleVariant}>
+            <div>
+                2
+            </div>
+        </motion.div>
+        <motion.div variants={articleVariant}>
+            <div>
+                3
+            </div>
+        </motion.div>
+    </motion.div>
+```
 - Tailwind applies before rendering
  See MyProject passing of border color prop for each project
  Rule: Tailwind CSS applies styles before rendering. When using Tailwind CSS in Next.js, the styles are applied during the build process, and only the necessary CSS styles are included in the final bundle. This helps optimize the performance of the application by reducing the amount of CSS that needs to be loaded by the browser.
