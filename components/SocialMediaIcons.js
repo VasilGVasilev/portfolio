@@ -24,7 +24,7 @@ const SocialMediaIcons = () => {
         </Link>
         <Link
           className="hover:opacity-50 transition duration-300"
-          href="mailto:vasilgvasilev97@gmail.com"
+          href="mailto:vgvmail97@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
