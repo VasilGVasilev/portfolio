@@ -12,7 +12,7 @@ const SocialMediaIcons = () => {
           // no bugs with older browsers
           rel="noreferrer"
         >
-          <img alt="github-link" src="/assets/github.png" />
+          <img alt="github-link" src="/assets/github.webp" />
         </Link>
         <Link
           className="hover:opacity-50 transition duration-300"
@@ -20,7 +20,7 @@ const SocialMediaIcons = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img alt="linkedin-link" src="/assets/linkedin.png" />
+          <img alt="linkedin-link" src="/assets/linkedin.webp" />
         </Link>
         <Link
           className="hover:opacity-50 transition duration-300"
@@ -28,7 +28,7 @@ const SocialMediaIcons = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img alt="gmail-link" src="/assets/gmail.png" />
+          <img alt="gmail-link" src="/assets/gmail.webp" />
         </Link>
         <Link
           className="hover:opacity-50 transition duration-300"
@@ -36,7 +36,7 @@ const SocialMediaIcons = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img alt="phone-link" src="/assets/phone.png" />
+          <img alt="phone-link" src="/assets/phone.webp" />
         </Link>
 
       </div>

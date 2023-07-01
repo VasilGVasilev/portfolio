@@ -43,11 +43,11 @@ const MyProjects = () => {
               <img
                 alt="skills"
                 className="z-10"
-                src="assets/skills-image.png"
+                src="assets/skills-image.webp"
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src="assets/skills-image.png" />
+            <img alt="skills" className="z-10" src="assets/skills-image.webp" />
           )}
         </div>
       </div>

@@ -24,10 +24,12 @@ const Project = ({ number, color, projectBorder, pictureLinkBorder, url, altLink
     >
       <div className="relative h-32">
         <div className="z-10 absolute">
+        <Link href={url} >
           <p className={`${playfair.className} font-semibold text-5xl`}>0{number}</p>
           <p className={`${playfair.className} font-semibold text-3xl mt-3`}>
             {projectName}
           </p>
+        </Link>
         </div>
         <div className={`w-1/2 md:w-3/4 h-32 bg-${color} absolute right-0 top-0 z-[1]`} />
       </div>
@@ -82,11 +84,11 @@ const MyProjects = () => {
               <img
                 alt="skills"
                 className="z-10"
-                src="assets/skills-image.png"
+                src="assets/skills-image.webp"
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src="assets/skills-image.png" />
+            <img alt="skills" className="z-10" src="assets/skills-image.webp" />
           )}
         </div>
       </div>
@@ -108,17 +110,17 @@ const MyProjects = () => {
           projectDesc={'A SSG website for a freelance project developed via Next.js, Tailwind, React. The main feature is change of color signifying the apartment status - sold, available, reserved.'} 
         />
 
-        {/* OTHER */}
+        {/* CHAT */}
         <Project 
           number='2' 
           color="red"
           projectBorder="before:border-red"
           pictureLinkBorder="border-red"  
-          url="https://ixorabg.com/" 
+          url="http://vgvchat.tech/" 
           altLink="ixroa-img" 
-          srcImg="assets/project-one.webp" 
-          projectName={'Ixora Residence'} 
-          projectDesc={'A SSG website for a freelance project developed via Next.js, Tailwind, React. The main feature is change of color signifying the apartment status - sold, available, reserved.'} 
+          srcImg="assets/project-two.webp" 
+          projectName={'VGV Chat'} 
+          projectDesc={'A SSG website developed via Firebase, SASS, React. Once logged-in, users can search for all other users in DB and choose to chat with them by selecting their name. The chat between current user and searched user is updated in real time. A feature sets the last message of a user to color red if they are not selected - the effect of unread messages.'} 
         />
 
         {/* OTHER */}

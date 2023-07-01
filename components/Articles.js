@@ -29,7 +29,7 @@ const Article = ({ title, subtitle }) => {
         <p className={`${playfair.className} text-2xl`}>{title}</p>
         <p className="mt-7">{subtitle}</p>
       </div>
-      <img src={`/assets/${articleTitle}.jpeg`} alt={articleTitle} />
+      <img src={`/assets/${articleTitle}.webp`} alt={articleTitle} />
     </motion.div>
   );
 };

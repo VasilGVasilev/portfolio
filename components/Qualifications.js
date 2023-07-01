@@ -27,8 +27,7 @@ const Qualifications = () => {
         </p>
         <LineGradient width="mx-auto w-2/5" />
         <p className="mt-10">
-          Here's What People are Saying About My Work. Aliquam aliquet integer
-          ut fames odio in at. At magna ornare dictum lectus.
+          Prior to delving into my real passion - web development, I have studied English and German law culminating in my Master of Laws degree.
         </p>
       </motion.div>
 
