@@ -91,8 +91,10 @@ const Landing = ({ setSelectedPage }) => {
           <Link
           // padding and bg create the illusion of a border
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            href="VasilVasilevCV.pdf"
-            download
+            href="./VasilVasilevCV.pdf"
+            download="CV-Document"
+            target="_blank"
+            rel="noreferrer"
           >
             <div className={`${playfair.className} bg-deep-blue hover:text-red transition duration-300 w-full h-full flex items-center justify-center px-10`}>
               My CV
