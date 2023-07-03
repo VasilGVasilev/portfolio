@@ -33,7 +33,7 @@ const Project = ({ number, color, projectBorder, pictureLinkBorder, url, altLink
         </div>
         <div className={`w-1/2 md:w-3/4 h-32 bg-${color} absolute right-0 top-0 z-[1]`} />
       </div>
-      <p className="mt-5">
+      <p className="mt-5 pr-5 text-justify">
           {projectDesc}
       </p>
       <div className={borderColor}>
