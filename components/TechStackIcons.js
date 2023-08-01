@@ -5,7 +5,7 @@ import { playfair } from "@/app/fonts";
 const TechStackIcons = () => {
     return (
         <div className="flex items-center gap-3">
-            <div className={`${playfair.className} md:text-2xl`} >Tech Stack |</div>
+            <div className={`${playfair.className} md:text-2xl`} >Main Tech Stack |</div>
             
             <div className="flex justify-center gap-1 md:gap-3">
                 <img alt="js-img" src="/assets/TechStack/js.webp" className="w-7 h-7"/>

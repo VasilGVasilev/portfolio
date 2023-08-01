@@ -6,7 +6,7 @@ import Link from "next/link";
 
 
 
-const Project = ({ number, color, projectBorder, pictureLinkBorder, url, altLink, srcImg, projectName, projectDesc }) => {
+const Project = ({ number, color, projectBorder, pictureLinkBorder, url, altLink, srcImg, projectName, projectDesc, githubLink }) => {
   const overlayStyles = `md:w-1/3 mt-10 relative z-0 p-10 xl:ml-20 xl:p-16 before:absolute before:bottom-10 before:right-10
   before:w-full before:h-full before:border-4 ${projectBorder} before:z-[-1]`;
   const borderColor = `w-full h-fit border-t-4 border-r-4 ${pictureLinkBorder} m-5 overflow-hidden mx-auto`
@@ -36,6 +36,8 @@ const Project = ({ number, color, projectBorder, pictureLinkBorder, url, altLink
       <p className="mt-5 pr-5 text-justify">
           {projectDesc}
       </p>
+      <br />
+      <Link href={githubLink} className="text-neutral-400 hover:text-white">See Github Code</Link>
       <div className={borderColor}>
         {/* The CSS OVERFLOW property controls what happens to content that is too big to fit into an area. */}
         <Link href={url} >
@@ -69,7 +71,7 @@ const MyProjects = () => {
             <span className="text-red">PRO</span>JECTS
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
+          <p className="mt-10 mb-7 text-neutral-300">
             My most recent three projects...
           </p>
         </motion.div>
@@ -107,7 +109,8 @@ const MyProjects = () => {
           altLink="ixroa-img" 
           srcImg="assets/project-one.webp" 
           projectName={'Ixora Residence'} 
-          projectDesc={'A SSG website for a freelance project developed via Next.js, Tailwind, React. The main feature is change of color signifying the apartment status - sold, available, reserved.'} 
+          projectDesc={'A SSG website for a freelance project about sell of apartments developed via Next.js, Tailwind, React and Framer Motion. '} 
+          githubLink={'https://github.com/VasilGVasilev/nextJS/tree/ixoraInter'}
         />
 
         {/* CHAT */}
@@ -120,10 +123,11 @@ const MyProjects = () => {
           altLink="ixroa-img" 
           srcImg="assets/project-two.webp" 
           projectName={'VGV Chat'} 
-          projectDesc={'A SSG website developed via Firebase, SASS, React. Once logged-in, users can search for all other users in DB and choose to chat with them by selecting their name. The chat between current user and searched user is updated in real time. A feature sets the last message of a user to color red if they are not selected - the effect of unread messages.'} 
+          projectDesc={'A Create React App website for real-time messaging developed via SASS, React and Firebase with unit testing via Cypress.'} 
+          githubLink={'https://github.com/VasilGVasilev/simpleChat'}
         />
 
-        {/* OTHER */}
+        {/* AIRBNB */}
         <Project 
           number='3' 
           color="yellow"
@@ -132,8 +136,10 @@ const MyProjects = () => {
           url="https://ixorabg.com/" 
           altLink="ixroa-img" 
           srcImg="assets/project-one.webp" 
-          projectName={'Ixora Residence'} 
-          projectDesc={'A SSG website for a freelance project developed via Next.js, Tailwind, React. The main feature is change of color signifying the apartment status - sold, available, reserved.'} 
+          projectName={'Airbnb clone'} 
+          projectDesc={'A fullstack application developed via Typescript, Next.js, React, Tailwind, Prisma, MongoDB, Zustand, Next-Auth, brypt, axios.'} 
+          githubLink={'https://github.com/VasilGVasilev/airbnb'}
+      
         />
 
       </div>
