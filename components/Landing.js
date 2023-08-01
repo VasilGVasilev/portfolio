@@ -4,9 +4,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { playfair } from "@/app/fonts";
 import TechStackIcons from "./TechStackIcons";
+import useModal from "@/app/hooks/useModal";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+  const openModal = useModal((state) => state.openModal)
   return (
     <section
       id="home"
@@ -19,12 +21,12 @@ const Landing = ({ setSelectedPage }) => {
           <div
           // before:w-full before:max-w-[400px] md:before:max-w-[600px], biggest width but not more than 400px, 600px
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
+            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:bg-neutral-100 before:opacity-20 before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
             <img
               alt="profile"
               // filter is not actually necessary, you can go ahead with saturate-200 directly
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full rounded-t-[400px] max-w-[400px] md:max-w-[600px]"
+              className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full rounded-t-[400px] max-w-[400px] md:max-w-[600px]"
               src="/assets/profile-image.webp"
             />
           </div>
@@ -80,14 +82,14 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <Link
+          <div
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
-              hover:bg-blue hover:text-white transition duration-300"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
+              hover:bg-blue hover:text-white transition duration-300 cursor-pointer"
+            onClick={openModal}
+            
           >
-            Contact Me
-          </Link>
+            About me
+          </div>
           <Link
           // padding and bg create the illusion of a border
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"

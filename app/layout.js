@@ -1,14 +1,19 @@
-
+'use client'
 import './globals.css'
 import { roboto } from './fonts'
+import Modal from "@/components/Modal";
+import useModal from "./hooks/useModal";
 
 
 export default function RootLayout({ children }) {
-
+  const closeModal = useModal((state) => state.closeModal)
+  const modalStatus = useModal((state) => state.modalStatus)
 
   return (
-    <html className={`h-full bg-[#010026] text-white scroll-smooth ${roboto.className}`}>
-      <body>
+    <html className={`h-full bg-[#010026] text-white scroll-smooth ${roboto.className} overflow-x-hidden`}>
+      <body className='overflow-x-hidden'>
+        <Modal closeModal={closeModal} modalStatus={modalStatus}>
+        </Modal>
         {children}
       </body>
     </html>

@@ -14,10 +14,13 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 
+
 export default function Home() {
   const [selectedPage, setSelectedPage] = useState("home"); //where are we navigationwise
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const isDesktop = useMediaQuery("(min-width: 1060px)");
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,6 +37,7 @@ export default function Home() {
   return (
     <div className="bg-deep-blue">
       {/* navbar is not in layout because layout cannot pass on props and context is too complex for the current app magnitude */}
+
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -79,7 +83,7 @@ export default function Home() {
           <Articles />
         </motion.div>
       </div>
-      
+
       <LineGradient />
 
       <div className="w-5/6 mx-auto md:h-full">
