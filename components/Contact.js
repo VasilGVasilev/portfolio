@@ -21,7 +21,12 @@ const Contact = () => {
         className="flex justify-end w-full"
       >
         <div>
-          <Link href="tel:+359884336793">          
+          <Link 
+            href="./VasilVasilevCV.pdf"
+            download="CV-Document"
+            target="_blank"
+            rel="noreferrer"
+          >          
             <p className="font-playfair font-semibold text-4xl">
               <span className="text-yellow cursor-pointer">CONTACT ME</span> TO GET STARTED
             </p>

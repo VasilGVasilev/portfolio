@@ -1,6 +1,7 @@
 import { playfair } from "@/app/fonts";
 import LineGradient from "./LineGradient";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 // the following two are merely templates for the two states /variants/
 // staggering one by one pics of projects effect
@@ -18,18 +19,20 @@ const articleVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Article = ({ title, subtitle }) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-700
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-10 text-deep-blue`;
+const Article = ({ title, subtitle, url }) => {
+  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-100 transition duration-700
+    bg-deep-blue z-30 flex flex-col justify-center items-center text-center p-10 text-white`;
   const articleTitle = title.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={articleVariant} className="relative">
-      <div className={overlayStyles}>
-        <p className={`${playfair.className} text-2xl`}>{title}</p>
-        <p className="mt-7">{subtitle}</p>
+      <Link href={url} className={overlayStyles}>
+        <p className={`${playfair.className} text-3xl`}>{title}</p>
+        <p className="mt-7 font-extrabold text-2xl">{subtitle}</p>
+      </Link>
+      <div className="bg-white flex flex-col justify-center items-center w-[400px] h-[400px]">
+        <img src={`/assets/${articleTitle}.webp`} alt={articleTitle} />
       </div>
-      <img src={`/assets/${articleTitle}.webp`} alt={articleTitle} />
     </motion.div>
   );
 };
@@ -80,17 +83,17 @@ const Articles = () => {
           >
             EVERY CONCEPT IS FEASIBLE
           </div>
-          <Article title="Article 1" subtitle='Article 1 substitle' />
-          <Article title="Article 2" subtitle='Article 1 substitle' />
+          <Article title="Article 1" subtitle='Understanding the useCallback hook' url={'https://dev.to/vasilgvasilev/understanding-the-usecallback-hook-4d5b'} />
+          <Article title="Article 2" subtitle='Loose Coupling and Dependency Injection (DI) principle ' url={'https://dev.to/vasilgvasilev/loose-coupling-and-dependency-injection-di-principle-3i8c'} />
 
           {/* ROW 2 */}
-          <Article title="Article 3" subtitle='Article 1 substitle' />
-          <Article title="Article 4" subtitle='Article 1 substitle' />
-          <Article title="Article 5" subtitle='Article 1 substitle' />
+          <Article title="Article 3" subtitle='Copying an Array in Javascript ' url={'https://dev.to/vasilgvasilev/copying-an-array-in-javascript-2dg3'} />
+          <Article title="Article 4" subtitle='Mutable And Immutable Values in Javascript' url={'https://dev.to/vasilgvasilev/mutable-and-immutable-values-in-javascript-1eho'} />
+          <Article title="Article 5" subtitle='Currying Step-By-Step' url={'https://dev.to/vasilgvasilev/currying-step-by-step-5eb2'} />
 
           {/* ROW 3 */}
-          <Article title="Article 6" subtitle='Article 1 substitle' />
-          <Article title="Article 7" subtitle='Article 1 substitle' />
+          <Article title="Article 6" subtitle='Why You Should Understand Closures To Master .reduce()' url={'https://dev.to/vasilgvasilev/why-you-need-to-understand-closures-to-fully-master-reduce-7ac'} />
+          <Article title="Article 7" subtitle='Article 1 substitle' url={'https://dev.to/vasilgvasilev/understanding-the-usecallback-hook-4d5b'} />
           <div
             className={`${playfair.className} flex justify-center text-center items-center p-10 bg-blue
             max-w-[400px] max-h-[400px] text-2xl font-semibold`}

@@ -24,16 +24,16 @@ const Project = ({ number, color, projectBorder, pictureLinkBorder, url, altLink
     >
       <div className="relative h-32">
         <div className="z-10 absolute">
-        <Link href={url} >
-          <p className={`${playfair.className} font-semibold text-5xl`}>0{number}</p>
-          <p className={`${playfair.className} font-semibold text-3xl mt-3`}>
+        <Link href={url}>
+          <p className={`${playfair.className} font-semibold text-5xl hover:scale-125 transition`}>0{number}</p>
+          <p className={`${playfair.className} font-semibold text-3xl mt-3 hover:scale-125 transition`}>
             {projectName}
           </p>
         </Link>
         </div>
-        <div className={`w-1/2 md:w-3/4 h-32 bg-${color} absolute right-0 top-0 z-[1]`} />
+        <div className={`w-full h-36 bg-${color} absolute right-5 top-0 z-[1]`} />
       </div>
-      <p className="mt-5 pr-5 text-justify">
+      <p className="mt-10 pr-5 text-justify text-neutral-300">
           {projectDesc}
       </p>
       <br />
@@ -84,13 +84,13 @@ const MyProjects = () => {
               before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
             >
               <img
-                alt="skills"
-                className="z-10"
-                src="assets/skills-image.webp"
+                alt="coding-image"
+                className="z-10 max-w-[700px] max-h-[400px]"
+                src="assets/coding-image.webp"
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src="assets/skills-image.webp" />
+            <img alt="coding-image" className="z-10 max-w-[500px] max-h-[400px]" src="assets/coding-image.webp" />
           )}
         </div>
       </div>
@@ -106,7 +106,7 @@ const MyProjects = () => {
           projectBorder="before:border-blue"
           pictureLinkBorder="border-blue" 
           url="https://ixorabg.com/" 
-          altLink="ixroa-img" 
+          altLink="ixora-img" 
           srcImg="assets/project-one.webp" 
           projectName={'Ixora Residence'} 
           projectDesc={'A SSG website for a freelance project about sell of apartments developed via Next.js, Tailwind, React and Framer Motion. '} 
@@ -120,7 +120,7 @@ const MyProjects = () => {
           projectBorder="before:border-red"
           pictureLinkBorder="border-red"  
           url="http://vgvchat.tech/" 
-          altLink="ixroa-img" 
+          altLink="chat-img" 
           srcImg="assets/project-two.webp" 
           projectName={'VGV Chat'} 
           projectDesc={'A Create React App website for real-time messaging developed via SASS, React and Firebase with unit testing via Cypress.'} 
@@ -133,9 +133,9 @@ const MyProjects = () => {
           color="yellow"
           projectBorder="before:border-yellow"
           pictureLinkBorder="border-yellow"  
-          url="https://ixorabg.com/" 
-          altLink="ixroa-img" 
-          srcImg="assets/project-one.webp" 
+          url="https://vgv-rental.vercel.app/" 
+          altLink="airbnb-img" 
+          srcImg="assets/project-three.webp" 
           projectName={'Airbnb clone'} 
           projectDesc={'A fullstack application developed via Typescript, Next.js, React, Tailwind, Prisma, MongoDB, Zustand, Next-Auth, brypt, axios.'} 
           githubLink={'https://github.com/VasilGVasilev/airbnb'}
