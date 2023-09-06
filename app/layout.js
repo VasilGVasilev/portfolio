@@ -1,6 +1,6 @@
 'use client'
 import './globals.css'
-import { roboto } from './fonts'
+import { roboto } from './utils/fonts'
 import Modal from "@/components/Modal";
 import useModal from "./hooks/useModal";
 

@@ -1,7 +1,9 @@
 import { useState } from "react";
 import useMediaQuery from "@/app/hooks/useMediaQuery";
-import { opensans, playfair } from "@/app/fonts";
+import { opensans, playfair } from "@/app/utils/fonts";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+
 
 // props: 
 // - name of link, must be constant
@@ -71,7 +73,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             className="rounded-full bg-red p-2"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
-            <img alt="menu-icon" src="/assets/menu-icon.svg" />
+            <AiOutlineMenu size={24} />
           </button>
         )}
 
@@ -81,7 +83,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <img alt="close-icon" src="/assets/close-icon.svg" />
+                <AiOutlineClose size={24} />
               </button>
             </div>
 

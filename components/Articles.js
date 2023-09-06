@@ -1,7 +1,9 @@
-import { playfair } from "@/app/fonts";
+import { playfair } from "@/app/utils/fonts";
 import LineGradient from "./LineGradient";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { imageLoader } from "@/app/utils/imgLoader";
+import Image from "next/image";
 
 // the following two are merely templates for the two states /variants/
 // staggering one by one pics of projects effect
@@ -30,8 +32,14 @@ const Article = ({ title, subtitle, url }) => {
         <p className={`${playfair.className} text-3xl`}>{title}</p>
         <p className="mt-7 font-extrabold text-2xl">{subtitle}</p>
       </Link>
-      <div className="bg-white flex flex-col justify-center items-center w-[400px] h-[400px]">
-        <img src={`/assets/${articleTitle}.webp`} alt={articleTitle} />
+      <div className="bg-white flex flex-col justify-center items-center w-[400px] h-[400px] p-10">
+        <Image
+          loader={imageLoader}
+          src={`/assets/${articleTitle}.webp`}
+          alt={articleTitle}
+          width={1298}
+          height={828}
+        ></Image>
       </div>
     </motion.div>
   );
@@ -63,7 +71,7 @@ const Articles = () => {
         </div>
         <p className="mt-10 mb-10">
           The following articles represent some brief explanations and solutions to fundamental problems I incurred during the development
-          of my projects.  
+          of my projects.
         </p>
       </motion.div>
 

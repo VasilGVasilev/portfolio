@@ -1,4 +1,4 @@
-import { playfair } from "@/app/fonts";
+import { playfair } from "@/app/utils/fonts";
 import LineGradient from "./LineGradient";
 import { motion } from "framer-motion";
 

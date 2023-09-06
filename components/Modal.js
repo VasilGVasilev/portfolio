@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { AiOutlineClose } from 'react-icons/ai';
 
 const Modal = ({ modalStatus, closeModal }) => {
     
@@ -22,10 +23,7 @@ const Modal = ({ modalStatus, closeModal }) => {
                             className="absolute top-3 right-[10%] sm:top-2 sm:right-3 rounded-full"
                             onClick={closeModal}
                         >
-                            <img 
-                                alt="close-icon" 
-                                src="/assets/close-icon.svg"
-                            ></img>
+                            <AiOutlineClose size={24} />
                         </button>
             </motion.div>
         </div >

@@ -2,11 +2,13 @@ import SocialMediaIcons from "./SocialMediaIcons";
 import useMediaQuery from "@/app/hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { playfair } from "@/app/fonts";
+import { playfair } from "@/app/utils/fonts";
 import TechStackIcons from "./TechStackIcons";
 import useModal from "@/app/hooks/useModal";
+import { imageLoader } from "@/app/utils/imgLoader";
+import Image from "next/image";
 
-const Landing = ({ setSelectedPage }) => {
+const Landing = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   const openModal = useModal((state) => state.openModal)
   return (
@@ -19,23 +21,29 @@ const Landing = ({ setSelectedPage }) => {
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
-          // before:w-full before:max-w-[400px] md:before:max-w-[600px], biggest width but not more than 400px, 600px
+            // before:w-full before:max-w-[400px] md:before:max-w-[600px], biggest width but not more than 400px, 600px
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
             before:w-full before:max-w-[400px] md:before:max-w-[600px] before:bg-neutral-100 before:opacity-20 before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
-            <img
-              alt="profile"
-              // filter is not actually necessary, you can go ahead with saturate-200 directly
+            <Image
               className="hover:filter hover:saturate-150 transition duration-500 z-10 w-full rounded-t-[400px] max-w-[400px] md:max-w-[600px]"
+              loader={imageLoader}
               src="/assets/profile-image.webp"
-            />
+              alt="profile"
+              width={1035}
+              height={977}
+            ></Image>
           </div>
         ) : (
-          <img
-            alt="profile"
+          <Image
             className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full rounded-t-[400px] max-w-[400px] md:max-w-[600px]"
+            loader={imageLoader}
             src="/assets/profile-image.webp"
-          />
+            alt="profile"
+            width={1035}
+            height={977}
+          ></Image>
+
         )}
       </div>
 
@@ -65,7 +73,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-20 mb-7 text-center md:text-start">
-            Hey, I am Vasil Vasilev. A passionate Web Developer based in Sofia, Bulgaria. 📍 
+            Hey, I am Vasil Vasilev. A passionate Web Developer based in Sofia, Bulgaria. 📍
           </p>
         </motion.div>
 
@@ -86,12 +94,12 @@ const Landing = ({ setSelectedPage }) => {
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-300 cursor-pointer"
             onClick={openModal}
-            
+
           >
             About me
           </div>
           <Link
-          // padding and bg create the illusion of a border
+            // padding and bg create the illusion of a border
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
             href="./VasilVasilevCV.pdf"
             download="CV-Document"
@@ -135,7 +143,7 @@ const Landing = ({ setSelectedPage }) => {
         </motion.div>
 
       </div>
-      
+
     </section>
   );
 };

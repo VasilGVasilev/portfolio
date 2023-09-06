@@ -1,7 +1,7 @@
 import LineGradient from "./LineGradient";
 import useMediaQuery from "@/app/hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import { playfair } from "@/app/fonts";
+import { playfair } from "@/app/utils/fonts";
 import Link from "next/link";
 
 
@@ -41,6 +41,7 @@ const Project = ({ number, color, projectBorder, pictureLinkBorder, url, altLink
       <div className={borderColor}>
         {/* The CSS OVERFLOW property controls what happens to content that is too big to fit into an area. */}
         <Link href={url} >
+          
           <img src={srcImg} alt={altLink} className="transition-transform duration-700 ease-in-out hover:scale-150" />
         </Link>
       </div>
