@@ -14,6 +14,11 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 
+// TODO:
+// lighthouse optimal
+// add react-icons instead of /public images
+// 
+
 
 export default function Home() {
   const [selectedPage, setSelectedPage] = useState("home"); //where are we navigationwise
