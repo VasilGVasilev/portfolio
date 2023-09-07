@@ -91,7 +91,8 @@ const Articles = () => {
           >
             EVERY CONCEPT IS FEASIBLE
           </div>
-          <Article title="Article 1" subtitle='Understanding the useCallback hook' url={'https://dev.to/vasilgvasilev/understanding-the-usecallback-hook-4d5b'} />
+          <Article title="Article 1" subtitle='Javascript is single or multi-threaded?' url={'https://dev.to/vasilgvasilev/javascript-is-single-or-multi-threaded-486e'} />
+
           <Article title="Article 2" subtitle='Loose Coupling and Dependency Injection (DI) principle ' url={'https://dev.to/vasilgvasilev/loose-coupling-and-dependency-injection-di-principle-3i8c'} />
 
           {/* ROW 2 */}
@@ -101,7 +102,8 @@ const Articles = () => {
 
           {/* ROW 3 */}
           <Article title="Article 6" subtitle='Why You Should Understand Closures To Master .reduce()' url={'https://dev.to/vasilgvasilev/why-you-need-to-understand-closures-to-fully-master-reduce-7ac'} />
-          <Article title="Article 7" subtitle='Article 1 substitle' url={'https://dev.to/vasilgvasilev/understanding-the-usecallback-hook-4d5b'} />
+          <Article title="Article 7" subtitle='Understanding the useCallback hook' url={'https://dev.to/vasilgvasilev/understanding-the-usecallback-hook-4d5b'} />
+          
           <div
             className={`${playfair.className} flex justify-center text-center items-center p-10 bg-blue
             max-w-[400px] max-h-[400px] text-2xl font-semibold`}
