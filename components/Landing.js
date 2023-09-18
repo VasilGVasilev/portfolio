@@ -18,7 +18,16 @@ const Landing = () => {
     >
       {/* basis and order are set like that bacause on mobile we first see img then text, if on desktop -> img is ordered 2 and proportion img <-> text is 3/5 <-> 2/5 */}
       {/* IMAGE SECTION */}
-      <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+      <motion.div 
+        className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2"
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.7, delay: 0.3 }}
+        variants={{
+            hidden: { opacity: 0, scale: 0 },
+            visible: { opacity: 1, scale: 1 },
+        }} 
+      >
         {isAboveLarge ? (
           <div
             // before:w-full before:max-w-[400px] md:before:max-w-[600px], biggest width but not more than 400px, 600px
@@ -45,7 +54,7 @@ const Landing = () => {
           ></Image>
 
         )}
-      </div>
+      </motion.div>
 
       {/* MAIN TEXT */}
       <div className="z-30 basis-2/5 mt-12 md:mt-32">

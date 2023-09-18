@@ -78,7 +78,16 @@ const MyProjects = () => {
         </motion.div>
 
         {/* IMAGE */}
-        <div className="mt-16 md:mt-0">
+        <motion.div 
+          className="mt-16 md:mt-0"
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.7, delay: 0.3 }}
+          variants={{
+              hidden: { opacity: 0, translateY: 20, skewX: -80, rotateY: 50 },
+              visible: { opacity: 1, translateY: 0, skewX: 0, rotateY: 0 },
+          }}  
+        >
           {isAboveLarge ? (
             <div
               className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
@@ -93,7 +102,7 @@ const MyProjects = () => {
           ) : (
             <img alt="coding-image" className="z-10 max-w-[500px] max-h-[400px]" src="assets/coding-image.webp" />
           )}
-        </div>
+        </motion.div>
       </div>
 
       {/* PROJECTS */}
