@@ -72,6 +72,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           <button
             className="rounded-full bg-red p-2"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
+            aria-label="Open mobile menu"
           >
             <AiOutlineMenu size={24} />
           </button>
@@ -82,7 +83,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
-              <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+              <button 
+                onClick={() => setIsMenuToggled(!isMenuToggled)}
+                aria-label="Close Mobile Menu"
+              >
                 <AiOutlineClose size={24} />
               </button>
             </div>

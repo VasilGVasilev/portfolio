@@ -14,6 +14,7 @@ const SocialMediaIcons = () => {
           target="_blank"
           // no bugs with older browsers
           rel="noreferrer"
+          aria-label="Github Link"
         >
           <AiFillGithub size={30} />
         </Link>
@@ -22,6 +23,8 @@ const SocialMediaIcons = () => {
           href="https://uk.linkedin.com/in/vasil-vasilev-28621b178"
           target="_blank"
           rel="noreferrer"
+          aria-label="Linkedin Link"
+
         >
           <AiFillLinkedin size={30} />
 
@@ -31,6 +34,7 @@ const SocialMediaIcons = () => {
           href="mailto:vgvmail97@gmail.com"
           target="_blank"
           rel="noreferrer"
+          aria-label="Gmail Link"
         >
           <BiLogoGmail size={30} />
 
@@ -40,6 +44,7 @@ const SocialMediaIcons = () => {
           href="tel:+359884336793"
           target="_blank"
           rel="noreferrer"
+          aria-label="Phone Link"
         >
           <BiSolidPhone size={30} />
 
