@@ -27,7 +27,7 @@ const Qualifications = () => {
         </p>
         <LineGradient width="mx-auto w-2/5" />
         <p className="mt-10">
-          Prior to delving into my real passion - web development, I have studied English and German law culminating in my Master of Laws degree.
+          Prior to delving into web development, I have studied English law and German law culminating in First Class Master of Laws degree.
         </p>
       </motion.div>
 
