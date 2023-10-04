@@ -56,12 +56,12 @@ export default function Home() {
             setSelectedPage={setSelectedPage}
           />
         )}
-        <motion.div
+        <div
           className="mt-50"
           onViewportEnter={() => setSelectedPage("home")}
         >
           <Landing setSelectedPage={setSelectedPage} />
-        </motion.div>
+        </div>
       </div>
 
 
@@ -69,46 +69,46 @@ export default function Home() {
       <LineGradient />
 
       <div className="w-5/6 mx-auto md:h-full ">
-        <motion.div
+        <div
           className="mt-50"
           onViewportEnter={() => setSelectedPage("projects")}
         >
           <MyProjects />
-        </motion.div>
+        </div>
       </div>
 
       <LineGradient />
 
       <div className="w-5/6 mx-auto">
-        <motion.div
+        <div
           className="mt-50"
           amount="all"
           onViewportEnter={() => setSelectedPage("articles")}
         >
           <Articles />
-        </motion.div>
+        </div>
       </div>
 
       <LineGradient />
 
       <div className="w-5/6 mx-auto md:h-full">
-        <motion.div
+        <div
           className="mt-50"
           onViewportEnter={() => setSelectedPage("qualifications")}
         >
           <Qualifications />
-        </motion.div>
+        </div>
       </div>
 
       <LineGradient />
 
       <div className="w-5/6 mx-auto md:h-full">
-        <motion.div
+        <div
           className="mt-50"
           onViewportEnter={() => setSelectedPage("contact")}
         >
           <Contact />
-        </motion.div>
+        </div>
       </div>
 
       <Footer />

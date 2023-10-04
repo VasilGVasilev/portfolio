@@ -22,6 +22,7 @@ const Landing = () => {
         className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2"
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true }}
         transition={{ duration: 0.7, delay: 0.3 }}
         variants={{
             hidden: { opacity: 0, scale: 0 },

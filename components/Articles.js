@@ -27,7 +27,7 @@ const Article = ({ title, subtitle, url }) => {
   const articleTitle = title.split(" ").join("-").toLowerCase();
 
   return (
-    <motion.div variants={articleVariant} className="relative">
+    <motion.div variants={articleVariant} className="relative" viewport={{ once: true }}>
       <Link href={url} className={overlayStyles}>
         <p className={`${playfair.className} text-3xl`}>{title}</p>
         <p className="mt-7 font-extrabold text-2xl">{subtitle}</p>

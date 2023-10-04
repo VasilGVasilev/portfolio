@@ -90,6 +90,7 @@ const MyProjects = () => {
           className="mt-16 md:mt-0"
           initial="hidden"
           whileInView="visible"
+          viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.3 }}
           variants={{
             hidden: { opacity: 0, translateY: 20, skewX: -80, rotateY: 50 },
