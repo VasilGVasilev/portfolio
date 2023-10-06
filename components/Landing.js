@@ -71,7 +71,7 @@ const Landing = () => {
           }}
         >
           <p className={`text-6xl ${playfair.className} z-10 text-center md:text-start`} >
-            {/* {""} gives us space between Jane and Esper (due to Esper being within a span) */}
+            {/* {""} gives us space between Vasil and Vasilev (due to Vasilev being within a span) */}
             Vasil {""}
             {/* before+content to attach the image brush to the text */}
             <span
@@ -83,7 +83,7 @@ const Landing = () => {
           </p>
 
           <p className="mt-20 mb-7 text-center md:text-start">
-            Hey, I am Vasil Vasilev. A passionate Web Developer based in Sofia, Bulgaria. 📍
+            Hey, my name is Vasil Vasilev and my passion is Web Development. 👋
           </p>
         </motion.div>
 

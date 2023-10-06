@@ -11,13 +11,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 
 
 // TODO:
 // lighthouse optimal
-// add react-icons instead of /public images
-// 
 
 
 export default function Home() {
