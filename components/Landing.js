@@ -102,8 +102,8 @@ const Landing = () => {
         >
           <div
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
-              hover:bg-blue hover:text-white transition duration-300 cursor-pointer"
-            onClick={openModal}
+              hover:bg-blue hover:text-white transition duration-300"
+            // onClick={openModal}
 
           >
             About me

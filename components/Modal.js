@@ -18,7 +18,7 @@ const Modal = ({ modalStatus, closeModal }) => {
                        <div
                             className="text-black text-center px-10"
                         >
-                            The longest word in any of the major English language dictionaries is, a word that refers to a lung disease contracted from the inhalation of very fine silica particles, specifically from a volcano; medically, it is the same as silicosis. 
+                            {/* I have to fill in this text in the future */}
                         </div>
                         <button
                             className="absolute top-3 right-[10%] sm:top-2 sm:right-3 rounded-full"
