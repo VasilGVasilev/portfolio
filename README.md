@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# A Static Portfolio Website with Next.js: React, Tailwind, Framer Motion
 
-## Getting Started
+I used this website to promote my work as a web developer
 
-First, run the development server:
+## [Go to Website](https://vgvweb.com/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## What's in the stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- React Framework [Next.js](https://nextjs.org/)
+- Styling with [Taiwlind](https://tailwindcss.com/) and [Framer Motion](https://www.framer.com/motion/?utm_source=google&utm_medium=adwords&utm_campaign=TW-WW-All-GS-UA-Traffic-20190326-Brand.Bmm_&gad=1&gclid=Cj0KCQjw2qKmBhCfARIsAFy8buLuIhI1cN0gUMS9Yjkiv5BK1Q1_5OvM0V4AaU4Gb8JMv1HzsTiSAJIaAg_3EALw_wcB)
+- Shared Server by [Hostinger](https://www.hostinger.com/)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Features:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Full responsiveness
+- Animations 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Learning achievements:
+- First use of Google Fonts
+- Adding a modal on click
