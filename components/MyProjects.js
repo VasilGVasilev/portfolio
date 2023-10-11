@@ -9,7 +9,7 @@ import { imageLoader } from "@/app/utils/imgLoader";
 
 
 const Project = ({ number, color, projectBorder, pictureLinkBorder, url, altLink, srcImg, imgW, imgH, projectName, projectDesc, githubLink }) => {
-  const overlayStyles = `md:w-1/4 mt-10 relative z-0 p-10 xl:ml-20 xl:p-16 before:absolute before:bottom-10 before:right-10
+  const overlayStyles = `mt-10 relative z-0 p-10 xl:p-16 before:absolute before:bottom-10 before:right-10
   before:w-full before:h-full before:border-4 ${projectBorder} before:z-[-1]`;
   const borderColor = `w-full h-fit border-t-4 border-r-4 ${pictureLinkBorder} m-5 overflow-hidden mx-auto`
   return (
@@ -27,15 +27,15 @@ const Project = ({ number, color, projectBorder, pictureLinkBorder, url, altLink
       <div className="relative h-32">
         <div className="z-10 absolute">
           <Link href={url}>
-            <p className={`${playfair.className} font-semibold text-5xl hover:scale-125 transition`}>0{number}</p>
-            <p className={`${playfair.className} font-semibold text-3xl mt-3 hover:scale-125 transition`}>
+            <p className={`${playfair.className} font-semibold text-4xl hover:scale-125 transition`}>0{number}</p>
+            <p className={`${playfair.className} font-semibold text-2xl mt-3 hover:scale-125 transition`}>
               {projectName}
             </p>
           </Link>
         </div>
         <div className={`w-full h-36 bg-${color} absolute right-5 top-0 z-[1]`} />
       </div>
-      <p className="mt-10 pr-5 text-justify text-neutral-300">
+      <p className="mt-10 mr-5 text-justify text-neutral-300">
         {projectDesc}
       </p>
       <br />
@@ -81,7 +81,7 @@ const MyProjects = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7 text-neutral-300">
-            My most recent three projects...
+            A few of my latest projects...
           </p>
         </motion.div>
 
@@ -119,18 +119,33 @@ const MyProjects = () => {
       </div>
 
       {/* PROJECTS */}
-      <div className="md:flex md:justify-between mt-16 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:justify-between mt-16 gap-10">
 
+        {/* TILIA */}
+        <Project
+          number='1'
+          color="red"
+          projectBorder="before:border-red"
+          pictureLinkBorder="border-red"
+          url="https://tiliabg.com/"
+          altLink="tilia-img"
+          srcImg="/assets/project-tilia.webp"
+          imgW="5000"
+          imgH="2813"
+          projectName={'Tilia Residence'}
+          projectDesc={'A SSG website for a freelance project about sell of apartments developed via Next.js, Tailwind, React and Framer Motion. '}
+          githubLink={'https://github.com/VasilGVasilev/tilia'}
+        />
 
         {/* IXORA */}
         <Project
-          number='1'
+          number='2'
           color="blue"
           projectBorder="before:border-blue"
           pictureLinkBorder="border-blue"
           url="https://ixorabg.com/"
           altLink="ixora-img"
-          srcImg="/assets/project-one.webp"
+          srcImg="/assets/project-ixora.webp"
           imgW="5000"
           imgH="2813"
           projectName={'Ixora Residence'}
@@ -140,13 +155,13 @@ const MyProjects = () => {
 
         {/* CHAT */}
         <Project
-          number='2'
+          number='3'
           color="red"
           projectBorder="before:border-red"
           pictureLinkBorder="border-red"
           url="http://vgvchat.tech/"
           altLink="chat-img"
-          srcImg="/assets/project-two.webp"
+          srcImg="/assets/project-chat.webp"
           imgW="1804"
           imgH="1087"
           projectName={'VGV Chat'}
@@ -156,13 +171,13 @@ const MyProjects = () => {
 
         {/* AIRBNB */}
         <Project
-          number='3'
+          number='4'
           color="yellow"
           projectBorder="before:border-yellow"
           pictureLinkBorder="border-yellow"
           url="https://vgv-rental.vercel.app/"
           altLink="airbnb-img"
-          srcImg="/assets/project-three.webp"
+          srcImg="/assets/project-airbnb.webp"
           imgW="2522"
           imgH="1237"
           projectName={'Airbnb clone'}
