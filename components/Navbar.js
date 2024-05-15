@@ -25,7 +25,7 @@ const LinkTemplate = ({ page, selectedPage, setSelectedPage, setIsMenuToggled, i
     <Link
       className={`${selectedPage === lowerCasePage ? "text-[#facc15]" : ""
         }  hover:scale-125 transition duration-300`}
-      href={`#${lowerCasePage}`}
+      href={`/web#${lowerCasePage}`}//THIS IS ONLY FOR GITHUB PAGES
       onClick={() => exitModalToSelectedPage(lowerCasePage)}
     >
       {page}
@@ -49,8 +49,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <Link href={'#home'} ><h4 className={`${playfair.className} text-3xl font-bold`}>Vasil Vasilev</h4></Link>
-
+        <Link href={'/web#home'} ><h4 className={`${playfair.className} text-3xl font-bold`}>Vasil Vasilev</h4></Link>
+{/* THE ABOVE IS ONLY FOR GITHUB PAGES */}
         {/* DESKTOP NAV */}
         {isDesktop ? (
           <div className={`${opensans.className} flex justify-between gap-16 text-base font-semibold`}>
