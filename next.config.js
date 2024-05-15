@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    assetPrefix: process.env.BASE_PATH || '',
     output: 'export',
     // Optional: Add a trailing slash to all paths `/about` -> `/about/`
     trailingSlash: true,
