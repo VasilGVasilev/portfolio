@@ -35,8 +35,6 @@ const Qualifications = () => {
       <div className="md:flex md:justify-between gap-8">
 
       <motion.div
-          className="mx-auto relative bg-blue max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-kings "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -53,8 +51,6 @@ const Qualifications = () => {
         </motion.div>
 
         <motion.div
-          className="mx-auto relative bg-yellow max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-humboldt"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -71,8 +67,6 @@ const Qualifications = () => {
         </motion.div>
 
         <motion.div
-          className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-softuni"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

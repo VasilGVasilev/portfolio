@@ -10,35 +10,35 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
   return (
     <div className="flex flex-col gap-6 fixed top-[60%] right-7 z-50">
       <Link
-        href="#home"
+        href="/web#home"
         className={`${selectedPage === "home" ? selectedStyles : notSelectedStyles
           } w-3 h-3 rounded-full`}
         onClick={() => setSelectedPage("home")}
       />
 
       <Link
-        href="#projects"
+        href="/web#projects"
         className={`${selectedPage === "projects" ? selectedStyles : notSelectedStyles
           } w-3 h-3 rounded-full`}
         onClick={() => setSelectedPage("projects")}
       />
 
       <Link
-        href="#articles"
+        href="/web#articles"
         className={`${selectedPage === "articles" ? selectedStyles : notSelectedStyles
           } w-3 h-3 rounded-full`}
         onClick={() => setSelectedPage("articles")}
       />
 
       <Link
-        href="#qualifications"
+        href="/web#qualifications"
         className={`${selectedPage === "qualifications" ? selectedStyles : notSelectedStyles
           } w-3 h-3 rounded-full`}
         onClick={() => setSelectedPage("qualifications")}
       />
 
       <Link
-        href="#contact"
+        href="/web#contact"
         className={`${selectedPage === "contact" ? selectedStyles : notSelectedStyles
           } w-3 h-3 rounded-full`}
         onClick={() => setSelectedPage("contact")}
