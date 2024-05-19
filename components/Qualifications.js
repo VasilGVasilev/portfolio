@@ -35,6 +35,7 @@ const Qualifications = () => {
       <div className="md:flex md:justify-between gap-8">
 
       <motion.div
+          className="qualification-kings"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -51,6 +52,7 @@ const Qualifications = () => {
         </motion.div>
 
         <motion.div
+          className="qualification-humboldt"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -67,6 +69,7 @@ const Qualifications = () => {
         </motion.div>
 
         <motion.div
+          className="qualification-softuni"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

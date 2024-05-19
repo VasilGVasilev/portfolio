@@ -17,10 +17,10 @@
 }
 
 .qualification-kings::before {
-    content: url("/web/public/assests/kings.webp");
+    content: url("/web/assets/kings.webp");
     position: absolute;
-    top: -120px;
-    margin-left: -110px;
+    top: -10px;
+    transform: translateX(-50%);
     left: 50%;
 }
 
@@ -39,10 +39,10 @@
 }
 
 .qualification-humboldt::before {
-    content: url("/web/public/assests/humboldt.webp");
+    content: url("/web/assets/humboldt.webp");
     position: absolute;
-    top: -120px;
-    margin-left: -110px;
+    top: -10px;
+    transform: translateX(-50%);
     left: 50%;
 }
 
@@ -61,9 +61,9 @@
 }
 
 .qualification-softuni::before {
-    content: url("/web/public/assests/softuni.webp");
+    content: url("/web/assets/softuni.webp");
     position: absolute;
-    top: -120px;
-    margin-left: -110px;
+    top: -10px;
+    transform: translateX(-50%);
     left: 50%;
 }
