@@ -46,7 +46,7 @@ const Qualifications = () => {
           }}
         >
           <p className={`${playfair.className} text-6xl`}>“</p>
-          <p className="text-center text-xl">
+          <p className="text-center text-lg">
             English Law & German Law
           </p>
         </motion.div>
@@ -63,7 +63,7 @@ const Qualifications = () => {
           }}
         >
           <p className={`${playfair.className} text-6xl`}>“</p>
-          <p className="text-center text-xl">
+          <p className="text-center text-lg">
             Master of Laws (LL.M.)
           </p>
         </motion.div>
@@ -80,7 +80,7 @@ const Qualifications = () => {
           }}
         >
           <p className={`${playfair.className} text-6xl`}>“</p>
-          <p className="text-center text-xl">
+          <p className="text-center text-lg">
             JS Web Developer
           </p>
         </motion.div>
