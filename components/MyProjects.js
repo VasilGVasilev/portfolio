@@ -159,7 +159,7 @@ const MyProjects = () => {
           color="red"
           projectBorder="before:border-red"
           pictureLinkBorder="border-red"
-          url="http://creativestudio.bg/"
+          url="http://creativestudiobg.com/"
           altLink="chat-img"
           srcImg="/assets/project-creativestudio.webp"
           imgW="1804"
