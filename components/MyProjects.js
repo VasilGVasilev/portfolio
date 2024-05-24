@@ -153,20 +153,20 @@ const MyProjects = () => {
           githubLink={'https://github.com/VasilGVasilev/nextJS/tree/ixoraInter'}
         />
 
-        {/* CHAT */}
+        {/* Creative Studio */}
         <Project
           number='3'
           color="red"
           projectBorder="before:border-red"
           pictureLinkBorder="border-red"
-          url="http://vgvchat.tech/"
+          url="http://creativestudio.bg/"
           altLink="chat-img"
-          srcImg="/assets/project-chat.webp"
+          srcImg="/assets/project-creativestudio.webp"
           imgW="1804"
           imgH="1087"
-          projectName={'VGV Chat'}
-          projectDesc={'A Create React App website for real-time messaging developed via SASS, React and Firebase with unit testing via Cypress.'}
-          githubLink={'https://github.com/VasilGVasilev/simpleChat'}
+          projectName={'Creative Studio'}
+          projectDesc={'A SSG website for a freelance project about a firm portfolio developed via Next.js, Tailwind, React and Framer Motion.'}
+          githubLink={'https://github.com/VasilGVasilev/creativestudio-portfolio'}
         />
 
         {/* AIRBNB */}

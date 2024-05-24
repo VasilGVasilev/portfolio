@@ -7,7 +7,7 @@
     margin-right: auto;
     position: relative;
     background-color: rgb(32 182 229 / 1);
-    max-width: 400px;
+    min-width: 350px;
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
 }
 
 .qualification-kings::before {
-    content: url("/web/assets/kings.webp");
+    content: url("/portfolio/assets/kings.webp");
     position: absolute;
     top: -10px;
     transform: translateX(-50%);
@@ -29,7 +29,7 @@
     margin-right: auto;
     position: relative;
     background-color: rgb(251 146 60 / 1);
-    max-width: 400px;
+    min-width: 350px;
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@
 }
 
 .qualification-humboldt::before {
-    content: url("/web/assets/humboldt.webp");
+    content: url("/portfolio/assets/humboldt.webp");
     position: absolute;
     top: -10px;
     transform: translateX(-50%);
@@ -51,7 +51,7 @@
     margin-right: auto;
     position: relative;
     background-color: rgb(185 32 74 / 1);
-    max-width: 400px;
+    min-width: 350px;
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@
 }
 
 .qualification-softuni::before {
-    content: url("/web/assets/softuni.webp");
+    content: url("/portfolio/assets/softuni.webp");
     position: absolute;
     top: -10px;
     transform: translateX(-50%);
