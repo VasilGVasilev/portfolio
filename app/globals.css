@@ -17,7 +17,7 @@
 }
 
 .qualification-kings::before {
-    content: url("/portfolio/assets/kings.webp");
+    content: url("/web/assets/kings.webp");
     position: absolute;
     top: -10px;
     transform: translateX(-50%);
@@ -39,7 +39,7 @@
 }
 
 .qualification-humboldt::before {
-    content: url("/portfolio/assets/humboldt.webp");
+    content: url("/web/assets/humboldt.webp");
     position: absolute;
     top: -10px;
     transform: translateX(-50%);
@@ -61,7 +61,7 @@
 }
 
 .qualification-softuni::before {
-    content: url("/portfolio/assets/softuni.webp");
+    content: url("/web/assets/softuni.webp");
     position: absolute;
     top: -10px;
     transform: translateX(-50%);

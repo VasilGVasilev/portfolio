@@ -25,10 +25,10 @@ module.exports = {
       }),
       // content relating to ::before hover
       content: {
-        brush: "url('/portfolio/assets/brush.webp')",
-        softuni: "url('/portfolio/assets/softuni.webp')",
-        kings: "url('/portfolio/assets/kings.webp')",
-        humboldt: "url('/portfolio/assets/humboldt.webp')",
+        brush: "url('/web/assets/brush.webp')",
+        softuni: "url('/web/assets/softuni.webp')",
+        kings: "url('/web/assets/kings.webp')",
+        humboldt: "url('/web/assets/humboldt.webp')",
         // "project-one": "url('/assets/project-one.webp')",
         // "project-two": "url('/assets/project-two.webp')",
 
