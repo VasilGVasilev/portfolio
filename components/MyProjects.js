@@ -8,7 +8,7 @@ import { imageLoader } from "@/app/utils/imgLoader";
 
 
 
-const Project = ({ number, color, projectBorder, pictureLinkBorder, url, altLink, srcImg, imgW, imgH, projectName, projectDesc, githubLink }) => {
+const Project = ({ number, bgColor, projectBorder, pictureLinkBorder, url, altLink, srcImg, imgW, imgH, projectName, projectDesc, githubLink }) => {
   const overlayStyles = `mt-10 relative z-0 p-10 xl:p-16 before:absolute before:bottom-10 before:right-10
   before:w-full before:h-full before:border-4 ${projectBorder} before:z-[-1]`;
   const borderColor = `w-full h-fit border-t-4 border-r-4 ${pictureLinkBorder} m-5 overflow-hidden mx-auto`
@@ -33,7 +33,7 @@ const Project = ({ number, color, projectBorder, pictureLinkBorder, url, altLink
             </p>
           </Link>
         </div>
-        <div className={`w-full h-36 bg-${color} absolute right-5 top-0 z-[1]`} />
+        <div className={`w-full h-36 ${bgColor} absolute right-5 top-0 z-[1]`} />
       </div>
       <p className="mt-10 mr-5 text-justify text-neutral-300">
         {projectDesc}
@@ -124,7 +124,7 @@ const MyProjects = () => {
         {/* TILIA */}
         <Project
           number='1'
-          color="red"
+          bgColor="bg-red"
           projectBorder="before:border-red"
           pictureLinkBorder="border-red"
           url="https://tiliabg.com/"
@@ -140,7 +140,7 @@ const MyProjects = () => {
         {/* IXORA */}
         <Project
           number='2'
-          color="blue"
+          bgColor="bg-blue"
           projectBorder="before:border-blue"
           pictureLinkBorder="border-blue"
           url="https://ixorabg.com/"
@@ -156,7 +156,7 @@ const MyProjects = () => {
         {/* Creative Studio */}
         <Project
           number='3'
-          color="red"
+          bgColor="bg-red"
           projectBorder="before:border-red"
           pictureLinkBorder="border-red"
           url="http://creativestudiobg.com/"
@@ -172,7 +172,7 @@ const MyProjects = () => {
         {/* AIRBNB */}
         <Project
           number='4'
-          color="yellow"
+          bgColor="bg-yellow"
           projectBorder="before:border-yellow"
           pictureLinkBorder="border-yellow"
           url="https://vgv-rental.vercel.app/"
