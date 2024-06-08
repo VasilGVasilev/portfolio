@@ -111,7 +111,7 @@ const Landing = () => {
           <Link
             // padding and bg create the illusion of a border
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            href="/VasilVasilevCV.pdf"
+            href="/web/VasilVasilevCV.pdf"
             download="CV-Document"
             target="_blank"
             rel="noreferrer"
